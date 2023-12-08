@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "azureBotId": {
-      "value": ""
+      "value": "orangehrm-utils-skype"
     },
     "azureBotSku": {
       "value": "S1"
@@ -12,13 +12,13 @@
       "value": "global"
     },
     "botEndpoint": {
-      "value": ""
+      "value": "https://orangehrm-utils.azurewebsites.net/api/messages"
     },
     "appType": {
       "value": "MultiTenant"
     },
     "appId": {
-      "value": ""
+      "value": "78eb2444-2a45-4aa6-85b8-d7e36d2943bd"
     },
     "UMSIName": {
       "value": ""

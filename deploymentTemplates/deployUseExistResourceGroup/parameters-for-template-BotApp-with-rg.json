@@ -3,7 +3,7 @@
   "contentVersion": "1.0.0.0",
   "parameters": {
     "appServiceName": {
-      "value": ""
+      "value": "orangehrm-utils"
     },
     "existingAppServicePlanName": {
       "value": ""
@@ -12,10 +12,10 @@
       "value": ""
     },
     "newAppServicePlanName": {
-      "value": ""
+      "value": "orangehrm-utils-app-service-plan"
     },
     "newAppServicePlanLocation": {
-      "value": ""
+      "value": "southeastasia"
     },
     "newAppServicePlanSku": {
       "value": {
@@ -30,10 +30,10 @@
       "value": "MultiTenant"
     },
     "appId": {
-      "value": ""
+      "value": "78eb2444-2a45-4aa6-85b8-d7e36d2943bd"
     },
     "appSecret": {
-      "value": ""
+      "value": "_sT8Q~5qbWqYi.sdiRjfobGNhfPAmJIZzJw8ebHP"
     },
     "UMSIName": {
       "value": ""
