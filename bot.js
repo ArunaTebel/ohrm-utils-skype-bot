@@ -8,11 +8,11 @@ class EchoBot extends ActivityHandler {
         super();
         this.onMessage(async (context, next) => {
             const owners = await getOwnerOfVehicle(context.activity.text);
-            let replyText;
+            let replyText = `You requested the owner of the vehicle number: ${ context.activity.text }\r\n`;
             if (!owners || !owners.length) {
-                replyText = 'No owner found for the given vehicle number';
+                replyText += 'No owner found for the given vehicle number';
             } else {
-                replyText = 'Following owner matched the given vehicle number\r\n';
+                replyText += 'Following owner(s) matched the given vehicle number\r\n';
                 owners.forEach(owner => {
                     replyText += `Name: ${ owner[0] }, Vehicle Number(s): ${ owner[1] }, Phone: ${ owner[2] }\r\n`;
                 });
