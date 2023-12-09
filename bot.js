@@ -7,8 +7,13 @@ class EchoBot extends ActivityHandler {
     constructor() {
         super();
         this.onMessage(async (context, next) => {
-            const owners = await getOwnerOfVehicle(context.activity.text);
-            let replyText = `You requested the owner of the vehicle number: ${ context.activity.text }\r\n`;
+            const botName = 'orangehrm-utils-skype';
+            let vehicleNo = context.activity.text;
+            if (vehicleNo.startsWith(botName)) {
+                vehicleNo = vehicleNo.split(botName)[1].trim();
+            }
+            const owners = await getOwnerOfVehicle(vehicleNo);
+            let replyText = `You requested the owner of the vehicle number: ${ vehicleNo }\r\n`;
             if (!owners || !owners.length) {
                 replyText += 'No owner found for the given vehicle number';
             } else {
